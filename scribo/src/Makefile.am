@@ -164,7 +164,6 @@ scribo-cli: $(srcdir)/scribo-cli.in Makefile
 	test -f ./$@.in || srcdir=$(srcdir)/; \
 	$(do_subst) $${srcdir}$@.in >$@.tmp
 	chmod +x $@.tmp
-	chmod a-w $@.tmp
 	mv $@.tmp $@
 
 CLEANFILES = $(dist_bin_SCRIPTS)
